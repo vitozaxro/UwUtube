@@ -1,0 +1,103 @@
+$colors: #ff7551, orange, #32a7e2, #6c5ecf;
+$repeat: 20;  // How often you want the pattern to repeat.
+@for $i from 1 through $repeat {
+  .menu {
+    .row:nth-child(#{length($colors)}n+#{$i}):hover {
+      .icon-div {
+        background: nth($colors, random(length($colors)));
+      }
+    }
+  }
+}
+.left {
+  width: 250px;
+  padding-left: 25px;
+  background: #1f1d2b;
+  border-right: 1px solid rgb(128 129 145 / 24%);
+  padding-right: 25px;
+  height: 100vh;
+  float: left;
+  overflow: auto;
+  padding-top: 20px;
+  .logo {
+    color: white;
+    font-weight: bold;
+    width: 100%;
+    font-size: 23px;
+  } // logo
+  .menu {
+    overflow: auto;
+    padding: 30px 0;
+    border-bottom: 1px solid rgb(128 129 145 / 24%);
+    .first {
+      p {
+        color: white;
+        font-size: 18px;
+        font-weight: bold;
+
+      } // p
+    } // first
+    .row {
+      width: 100%;
+      float: left;
+      display: flex;
+      align-items: center;
+      overflow: auto;
+      margin-top: 20px;
+      .icon-div {
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 8px;
+        background: #353340;
+        height: 40px;
+        float: left;
+        color: #6d6d73;
+        svg {
+          fill: #6d6d73;
+          width: 20px;
+        } // svg
+        i {
+          color: #6d6d73;
+          font-size: 19px;
+        } // i
+      } // icon-div
+      p {
+        float: left;
+        font-size: 17px;
+        color: #808191;
+        margin-left: 20px;
+      } // p
+    } // row
+    .row:hover {
+      .icon-div {
+        color: white;
+        //background: #32a7e2;
+        svg { fill: white; } // svg
+        i { color: white; } // i
+      } // icon-div
+      p {
+        font-weight: bold;
+        color: white;
+      } // p
+    } // row:hover
+  } // menu
+  .subscriber-list {
+    border: 0;
+    .icon-div {
+      border-radius: 50px !important;
+      font-weight: bold;
+    } // icon-div
+  } // subscriber-list
+} // left
+.left::-webkit-scrollbar-thumb {
+  background-color: #353340;
+  outline: 0;
+} // .content::-webkit-scrollbar-thumb
+.left::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+} // .content::-webkit-scrollbar-track
+.left::-webkit-scrollbar {
+  width: 5px;
+} // .content::-webkit-scrollbar

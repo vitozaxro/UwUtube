@@ -1,0 +1,92 @@
+.sl_modal {
+  top: 10%;
+  left: 50%;
+  opacity: 0;
+  z-index: 10;
+  width: 400px;
+  transition: .5s;
+  overflow: hidden;
+  visibility: hidden;
+  border-radius: 4px;
+  position: absolute;
+  background: #18181b;
+  padding: 30px 20px 30px 20px;
+  transform: translateX(-50%);
+  .log_in_content, .sign_up_content {
+    .error-p {
+      color: red;
+      display: none;
+      font-size: 16px;
+    } // error-p
+    label, input, button {
+      width: 100%;
+      color: white;
+      font-weight: bold;
+    } // input label button
+    input, button {
+      height: 30px;
+    } // input button
+    label {
+      margin-top: 20px;
+      display: inline-block;
+    } //label
+    input {
+      transition: 1s;
+      margin-top: 5px;
+      border-radius: 3px;
+      background: #464649;
+      padding: 0 5px 0 5px;
+      border: #464649 1px solid;
+    } // input
+    input:hover {
+      border: #6d6d73 1px solid;
+    } // input:hover
+    button {
+      border: 0;
+      font-size: 15px;
+      margin-top: 30px;
+      background: #29292c;
+    } // button
+  } //form
+  .modal_header {
+    .logo {
+      margin: auto;
+      display: block;
+      max-width: 100px;
+      max-height: 100px;
+      margin-bottom: 5px;
+    }
+    .row {
+      button {
+        width: 50%;
+        border: 0;
+        float: left;
+        color: white;
+        font-weight: bold;
+        background: transparent;
+        padding: 10px 0 10px 0;
+        border-bottom: 1px solid #303032;
+      } // button
+      button.active { border-bottom: 1px solid white; }
+    } // row
+  } // modal_header
+  button, input { outline: none; }
+} // sl_modal
+.sl_modal.open {
+  top: 17%;
+  opacity: 1;
+  visibility: visible;
+} // sl_modal open
+.cover {
+  z-index: 9;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: black;
+  visibility: hidden;
+} // cover
+.cover.open {
+  opacity: .5;
+  visibility: visible;
+} // cover open

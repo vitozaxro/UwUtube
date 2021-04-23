@@ -1,0 +1,282 @@
+.each-video {
+  display: block;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  overflow: auto;
+  margin-left: 185px;
+  padding-top: 20px;
+}
+.each-video .left-each-video {
+  float: left;
+  margin-right: 20px;
+  width: 900px;
+}
+.each-video .left-each-video .video {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.each-video .left-each-video .video video {
+  width: 100%;
+  max-height: 700px;
+}
+.each-video .left-each-video .top a {
+  color: #085394;
+  margin-left: 10px;
+}
+.each-video .left-each-video .top a:nth-child(1) {
+  margin-left: 0;
+}
+.each-video .left-each-video .middle {
+  height: 46px;
+  margin-top: 10px;
+}
+.each-video .left-each-video .middle .name-date {
+  float: left;
+  max-width: 700px;
+}
+.each-video .left-each-video .middle .name-date p:nth-child(1) {
+  color: white;
+  font-size: 21px;
+}
+.each-video .left-each-video .middle .name-date p:nth-child(2) {
+  color: gray;
+  font-size: 16px;
+  margin-top: 3px;
+}
+.each-video .left-each-video .middle .ld {
+  margin-top: 14px;
+  float: right;
+  color: white;
+}
+.each-video .left-each-video .middle .ld .like, .each-video .left-each-video .middle .ld .dislike {
+  float: left;
+}
+.each-video .left-each-video .middle .ld .like i, .each-video .left-each-video .middle .ld .dislike i {
+  float: left;
+}
+.each-video .left-each-video .middle .ld .like p, .each-video .left-each-video .middle .ld .dislike p {
+  font-size: 15px;
+  float: left;
+  margin-left: 6px;
+}
+.each-video .left-each-video .middle .ld .dislike {
+  margin-left: 25px;
+}
+.each-video .left-each-video .middle .lists-dropdown {
+  float: right;
+  position: relative;
+  display: inline-block;
+  margin-right: 15px;
+}
+.each-video .left-each-video .middle .lists-dropdown .dropdown-button {
+  color: white;
+  margin-top: 13px;
+  width: 50px;
+  display: flex;
+  font-size: 25px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+.each-video .left-each-video .middle .lists-dropdown .dropdown-content {
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+  margin-left: -55px;
+  display: none;
+}
+.each-video .left-each-video .middle .lists-dropdown:hover .dropdown-content {
+  display: block;
+}
+.each-video .left-each-video .low .user {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  justify-content: space-between;
+  padding: 10px 0;
+  margin-top: 15px;
+  border-top: 1px solid rgba(128, 129, 145, 0.24);
+  border-bottom: 1px solid rgba(128, 129, 145, 0.24);
+}
+.each-video .left-each-video .low .user div p {
+  float: left;
+  height: 40px;
+  font-size: 18px;
+  color: white;
+  display: flex;
+  align-items: center;
+  margin-left: 15px;
+}
+.each-video .left-each-video .low .user div .img {
+  width: 40px;
+  height: 40px;
+  background: #131217;
+  float: left;
+  display: flex;
+  justify-content: center;
+  border-radius: 100%;
+  overflow: hidden;
+  margin: 0;
+}
+.each-video .left-each-video .low .user .subscriber {
+  float: right;
+  border: 0;
+  width: 100px;
+  font-size: 15px;
+  font-weight: bold;
+  color: white;
+  border-radius: 7px;
+  outline: 0;
+}
+.each-video .left-each-video .low .description {
+  font-size: 18px;
+  width: 700px;
+  margin-top: 20px;
+  color: white;
+  margin-left: 55px;
+  word-spacing: 7px;
+}
+.each-video .left-each-video .comment {
+  margin-top: 30px;
+  overflow: auto;
+}
+.each-video .left-each-video .comment .main-comment-input {
+  width: 100%;
+  overflow: auto;
+  margin-bottom: 10px;
+}
+.each-video .left-each-video .comment .main-comment-input input, .each-video .left-each-video .comment .main-comment-input button {
+  background: transparent;
+  padding: 0 10px;
+  float: left;
+  color: white;
+  border: 0;
+  border-bottom: 1px solid #373544;
+}
+.each-video .left-each-video .comment .main-comment-input input {
+  width: 300px;
+  outline: 0;
+  height: 25px;
+}
+.each-video .left-each-video .comment .main-comment-input button {
+  height: 25px;
+}
+.each-video .left-each-video .comment .each-comment {
+  color: white;
+  margin-top: 25px;
+  margin-left: 55px;
+}
+.each-video .left-each-video .comment .each-comment .name {
+  font-size: 14px;
+  color: grey;
+}
+.each-video .left-each-video .comment .each-comment .text {
+  font-size: 18px;
+  margin-top: 1px;
+}
+.each-video .left-each-video .comment .each-comment .answer-btn {
+  border: 0;
+  color: #174794;
+  background: transparent;
+  outline: 0;
+  font-size: 14px;
+}
+.each-video .left-each-video .comment .each-comment .reply-btn {
+  border: 0;
+  color: gray;
+  background: transparent;
+  outline: 0;
+  font-size: 14px;
+  margin-left: 30px;
+}
+.each-video .left-each-video .comment .each-comment .answer {
+  margin-left: 15px;
+}
+.each-video .left-each-video .comment .each-comment .answer .each-answer {
+  margin-top: 20px;
+}
+.each-video .left-each-video .comment .each-comment .answer .each-answer .answer-name {
+  font-size: 14px;
+  color: grey;
+}
+.each-video .left-each-video .comment .each-comment .answer .each-answer .answer-text {
+  font-size: 18px;
+  margin-top: 1px;
+}
+.each-video .left-each-video .comment .each-comment .answer .each-answer .reply-btn {
+  margin: 0;
+}
+.each-video .left-each-video .comment .each-comment .answer .reply-input {
+  margin-top: 10px;
+  width: 100%;
+  overflow: auto;
+}
+.each-video .left-each-video .comment .each-comment .answer .reply-input input, .each-video .left-each-video .comment .each-comment .answer .reply-input button {
+  background: transparent;
+  color: white;
+  padding: 0 10px;
+  float: left;
+  border: none;
+  border-bottom: 1px solid #373544;
+}
+.each-video .left-each-video .comment .each-comment .answer .reply-input input {
+  width: 300px;
+  outline: 0;
+  height: 25px;
+}
+.each-video .left-each-video .comment .each-comment .answer .reply-input button {
+  height: 25px;
+}
+.each-video .right-each-video {
+  float: left;
+}
+.each-video .right-each-video .recommendations {
+  width: 360px;
+}
+.each-video .right-each-video .recommendations .each-video-rec:nth-child(1) {
+  margin-top: 0px;
+}
+.each-video .right-each-video .recommendations .each-video-rec {
+  width: 100%;
+  margin-top: 20px;
+  overflow: auto;
+}
+.each-video .right-each-video .recommendations .each-video-rec .left-video {
+  width: 160px;
+  height: 100px;
+  background: black;
+  float: left;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.each-video .right-each-video .recommendations .each-video-rec .left-video video {
+  width: 100%;
+  max-height: 100px;
+}
+.each-video .right-each-video .recommendations .each-video-rec .right-text {
+  color: white;
+  float: left;
+  width: 200px;
+  padding-left: 10px;
+}
+.each-video .right-each-video .recommendations .each-video-rec .right-text .name {
+  font-size: 16px;
+  height: 36px;
+  overflow: hidden;
+}
+.each-video .right-each-video .recommendations .each-video-rec .right-text .username {
+  height: 18px;
+  overflow: hidden;
+  margin-top: 6px;
+}
+.each-video .right-each-video .recommendations .each-video-rec .right-text .views, .each-video .right-each-video .recommendations .each-video-rec .right-text .date {
+  height: 18px;
+  overflow: hidden;
+  margin-top: 2px;
+}

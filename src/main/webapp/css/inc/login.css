@@ -1,0 +1,93 @@
+.sl_modal {
+  top: 10%;
+  left: 50%;
+  opacity: 0;
+  z-index: 10;
+  width: 400px;
+  transition: 0.5s;
+  overflow: hidden;
+  visibility: hidden;
+  border-radius: 4px;
+  position: absolute;
+  background: #18181b;
+  padding: 30px 20px 30px 20px;
+  transform: translateX(-50%);
+}
+.sl_modal .log_in_content .error-p, .sl_modal .sign_up_content .error-p {
+  color: red;
+  display: none;
+  font-size: 16px;
+}
+.sl_modal .log_in_content label, .sl_modal .log_in_content input, .sl_modal .log_in_content button, .sl_modal .sign_up_content label, .sl_modal .sign_up_content input, .sl_modal .sign_up_content button {
+  width: 100%;
+  color: white;
+  font-weight: bold;
+}
+.sl_modal .log_in_content input, .sl_modal .log_in_content button, .sl_modal .sign_up_content input, .sl_modal .sign_up_content button {
+  height: 30px;
+}
+.sl_modal .log_in_content label, .sl_modal .sign_up_content label {
+  margin-top: 20px;
+  display: inline-block;
+}
+.sl_modal .log_in_content input, .sl_modal .sign_up_content input {
+  transition: 1s;
+  margin-top: 5px;
+  border-radius: 3px;
+  background: #464649;
+  padding: 0 5px 0 5px;
+  border: #464649 1px solid;
+}
+.sl_modal .log_in_content input:hover, .sl_modal .sign_up_content input:hover {
+  border: #6d6d73 1px solid;
+}
+.sl_modal .log_in_content button, .sl_modal .sign_up_content button {
+  border: 0;
+  font-size: 15px;
+  margin-top: 30px;
+  background: #29292c;
+}
+.sl_modal .modal_header .logo {
+  margin: auto;
+  display: block;
+  max-width: 100px;
+  max-height: 100px;
+  margin-bottom: 5px;
+}
+.sl_modal .modal_header .row button {
+  width: 50%;
+  border: 0;
+  float: left;
+  color: white;
+  font-weight: bold;
+  background: transparent;
+  padding: 10px 0 10px 0;
+  border-bottom: 1px solid #303032;
+}
+.sl_modal .modal_header .row button.active {
+  border-bottom: 1px solid white;
+}
+.sl_modal button, .sl_modal input {
+  outline: none;
+}
+
+.sl_modal.open {
+  top: 17%;
+  opacity: 1;
+  visibility: visible;
+}
+
+.cover {
+  z-index: 9;
+  opacity: 0;
+  width: 100%;
+  height: 100vh;
+  position: fixed;
+  background: black;
+  visibility: hidden;
+}
+
+.cover.open {
+  opacity: 0.5;
+  visibility: visible;
+}
