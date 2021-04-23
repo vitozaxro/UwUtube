@@ -1,0 +1,277 @@
+.each-video {
+  display: block;
+  width: fit-content;
+  overflow: auto;
+  margin-left: 185px;
+  padding-top: 20px;
+  .left-each-video {
+    float: left;
+    margin-right: 20px;
+    width: 900px;
+    .video {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      video {
+        width: 100%;
+        max-height: 700px;
+      } // video
+    } // video
+    .top {
+      a {
+        color: #085394;
+        margin-left: 10px;
+      } // a
+      a:nth-child(1) { margin-left: 0; } // a first child
+    } // top
+    .middle {
+      height: 46px;
+      margin-top: 10px;
+      .name-date {
+        float: left;
+        max-width: 700px;
+        p:nth-child(1) {
+          color: white;
+          font-size: 21px;
+        } // p first child
+        p:nth-child(2) {
+          color: gray;
+          font-size: 16px;
+          margin-top: 3px;
+        } // p second child
+      } // name-date
+      .ld {
+        margin-top: 14px;
+        float: right;
+        color: white;
+        .like, .dislike {
+          float: left;
+          i { float: left; } // i
+          p {
+            font-size: 15px;
+            float: left;
+            margin-left: 6px;
+          } // p
+        } // like, dislike
+        .dislike { margin-left: 25px; } // dislike
+      } // ld
+      .lists-dropdown {
+        float: right;
+        position: relative;
+        display: inline-block;
+        margin-right: 15px;
+        .dropdown-button {
+          color: white;
+          margin-top: 13px;
+          width: 50px;
+          display: flex;
+          font-size: 25px;
+          margin-bottom: 10px;
+          justify-content: center;
+        } // dropdown-button
+        .dropdown-content {
+          position: absolute;
+          background-color: #f9f9f9;
+          min-width: 160px;
+          box-shadow: 0px 8px 16px 0px rgb(0 0 0 / 20%);
+          padding: 12px 16px;
+          z-index: 1;
+          margin-left: -55px;
+          display: none;
+        } // dropdown-content
+      } // lists-dropdown
+      .lists-dropdown:hover {
+        .dropdown-content {
+          display: block;
+        } // dropdown-content
+      } // lists-dropdown
+    } // middle
+    .low {
+      .user {
+        width: 100%;
+        display: flex;
+        overflow: auto;
+        justify-content: space-between;
+        padding: 10px 0;
+        margin-top: 15px;
+        border-top: 1px solid rgba(128, 129, 145, 0.24);
+        border-bottom: 1px solid rgba(128, 129, 145, 0.24);
+        div {
+          p {
+            float: left;
+            height: 40px;
+            font-size: 18px;
+            color: white;
+            display: flex;
+            align-items: center;
+            margin-left: 15px;
+          } // p
+          .img {
+            width: 40px;
+            height: 40px;
+            background: #131217;
+            float: left;
+            display: flex;
+            justify-content: center;
+            border-radius: 100%;
+            overflow: hidden;
+            margin: 0;
+          } // img
+        } // div
+        .subscriber {
+          float: right;
+          border: 0;
+          width: 100px;
+          font-size: 15px;
+          font-weight: bold;
+          color: white;
+          border-radius: 7px;
+          outline: 0;
+        } // subscriber
+      } // user
+      .description {
+        font-size: 18px;
+        width: 700px;
+        margin-top: 20px;
+        color: white;
+        margin-left: 55px;
+        word-spacing: 7px;
+      } // description
+    } // low
+    .comment {
+      margin-top: 30px;
+      overflow: auto;
+      .main-comment-input {
+        width: 100%;
+        overflow: auto;
+        margin-bottom: 10px;
+        input, button {
+          background: transparent;
+          padding: 0 10px;
+          float: left;
+          color: white;
+          border: 0;
+          border-bottom: 1px solid #373544;
+        } // input, button
+        input {
+          width: 300px;
+          outline: 0;
+          height: 25px;
+        } // input
+        button { height: 25px; }
+      } // main-comment-input
+      .each-comment {
+        color: white;
+        margin-top: 25px;
+        margin-left: 55px;
+        .name {
+          font-size: 14px;
+          color: grey;
+        } // name
+        .text {
+          font-size: 18px;
+          margin-top: 1px;
+        } //text
+        .answer-btn {
+          border: 0;
+          color: #174794;
+          background: transparent;
+          outline: 0;
+          font-size: 14px;
+        } // answer-btn
+        .reply-btn {
+          border: 0;
+          color: gray;
+          background: transparent;
+          outline: 0;
+          font-size: 14px;
+          margin-left: 30px;
+        } // reply-btn
+        .answer {
+          margin-left: 15px;
+          .each-answer {
+            margin-top: 20px;
+            .answer-name {
+              font-size: 14px;
+              color: grey;
+            } // answer-name
+            .answer-text {
+              font-size: 18px;
+              margin-top: 1px;
+            } // answer-text
+            .reply-btn {
+              margin: 0;
+            } // reply-btn
+
+          } // each-answer
+          .reply-input {
+            margin-top: 10px;
+            width: 100%;
+            overflow: auto;
+            input, button {
+              background: transparent;
+              color: white;
+              padding: 0 10px;
+              float: left;
+              border: none;
+              border-bottom: 1px solid #373544;
+            } // input, button
+            input {
+              width: 300px;
+              outline: 0;
+              height: 25px;
+            } // input
+            button { height: 25px; }
+          } // reply-input
+        } // answer
+      } // each-comment
+    } // comment
+  } // left-each-video
+  .right-each-video {
+    float: left;
+    .recommendations {
+      width: 360px;
+      .each-video-rec:nth-child(1) { margin-top: 0px; }
+      .each-video-rec {
+        width: 100%;
+        margin-top: 20px;
+        overflow: auto;
+        .left-video {
+          width: 160px;
+          height: 100px;
+          background: black;
+          float: left;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          video {
+            width: 100%;
+            max-height: 100px;
+          } // video
+        } // left-video
+        .right-text {
+          color: white;
+          float: left;
+          width: 200px;
+          padding-left: 10px;
+          .name {
+            font-size: 16px;
+            height: 36px;
+            overflow: hidden;
+          } // name
+          .username {
+            height: 18px;
+            overflow: hidden;
+            margin-top: 6px;
+          } // username
+          .views, .date {
+            height: 18px;
+            overflow: hidden;
+            margin-top: 2px;
+          } // views, date
+        } // right-text
+      } // each-video-rec
+    } // recommendations
+  } // right-each-video
+} // each-video
